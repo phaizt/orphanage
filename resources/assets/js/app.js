@@ -17,6 +17,24 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
+/*const app = new Vue({
     el: '#app'
-});
+});*/
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+// define routes for users
+const routes = [
+		{
+		  path: '/',
+		  name: 'homepage',
+		  component: require('./components/fe/index.vue')
+		}
+		];
+
+const router = new VueRouter({ routes });
+const app = new Vue({
+  router
+}).$mount('#app');
+
+Vue.config.devtools = true;

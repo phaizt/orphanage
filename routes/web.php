@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-});
-
 
 Route::get('/wp-login', 'Auth\LoginController@showLoginForm')->name('wp-login');
+/*route for frontend*/
+Route::get('/', 'Frontend\FeMissionController@index')->name('homepage');
+//Route::get('/mission', 'Frontend\FeMissionController@index')->name('mission');
 
+/*end route frontend*/
 
 /*route for admini site*/
 Route::group(['prefix' => 'wp-admin','middleware' => ['auth','web']], function () {

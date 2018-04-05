@@ -12,10 +12,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <title>Ela - Bootstrap Admin Dashboard Template</title>
     <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('wp-content/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('wp-content/backend/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{ asset('wp-content/css/helper.css') }}" rel="stylesheet">
-    <link href="{{ asset('wp-content/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('wp-content/backend/css/helper.css') }}" rel="stylesheet">
+    <link href="{{ asset('wp-content/backend/css/style.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
@@ -73,18 +73,18 @@
     </div>
     <!-- End Wrapper -->
     <!-- All Jquery -->
-    <script src="{{ asset('wp-content/js/lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/lib/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{ asset('wp-content/js/lib/bootstrap/js/popper.min.js') }}"></script>
-    <script src="{{ asset('wp-content/js/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/lib/bootstrap/js/popper.min.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/lib/bootstrap/js/bootstrap.min.js') }}"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="{{ asset('wp-content/js/jquery.slimscroll.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/jquery.slimscroll.js') }}"></script>
     <!--Menu sidebar -->
-    <script src="{{ asset('wp-content/js/sidebarmenu.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/sidebarmenu.js') }}"></script>
     <!--stickey kit -->
-    <script src="{{ asset('wp-content/js/lib/sticky-kit-master/dist/sticky-kit.mi') }}n.js"></script>
+    <script src="{{ asset('wp-content/backend/js/lib/sticky-kit-master/dist/sticky-kit.mi') }}n.js"></script>
     <!--Custom JavaScript -->
-    <script src="{{ asset('wp-content/js/custom.min.js') }}"></script>
+    <script src="{{ asset('wp-content/backend/js/custom.min.js') }}"></script>
 
 </body>
 
