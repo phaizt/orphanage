@@ -14010,19 +14010,51 @@ Vue.component('example-component', __webpack_require__(40));
 });*/
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
-
 // define routes for users
 var routes = [{
-  path: '/',
-  name: 'homepage',
-  component: __webpack_require__(44)
+		path: '/',
+		name: 'homepage',
+		components: {
+				slider: __webpack_require__(70),
+				content: __webpack_require__(44)
+		}
+}, {
+		path: '/mission',
+		name: 'mission',
+		components: {
+				content: __webpack_require__(52)
+		}
+}, {
+		path: '/aboutus',
+		name: 'aboutus',
+		components: {
+				content: __webpack_require__(55)
+		}
+}, {
+		path: '/help',
+		name: 'help',
+		components: {
+				content: __webpack_require__(67)
+		}
+}, {
+		path: '/contact',
+		name: 'contact',
+		components: {
+				content: __webpack_require__(61)
+		}
+}, {
+		path: '/gallery',
+		name: 'gallery',
+		components: {
+				content: __webpack_require__(64)
+		}
 }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({ routes: routes });
 var app = new Vue({
-  router: router
+		router: router
 }).$mount('#app');
-
+app.$forceUpdate();
 Vue.config.devtools = true;
 
 /***/ }),
@@ -50055,8 +50087,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -50092,7 +50122,16 @@ var staticRenderFns = [
                 _c("span", [_vm._v("Story 1")])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "pad_bot1" }, [_c("figure")]),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page1_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
               _vm._v("\n\t            Hope Center is one of "),
               _c(
                 "a",
@@ -50132,6 +50171,990 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(53)
+/* template */
+var __vue_template__ = __webpack_require__(54)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/mission.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-29f2c0da", Component.options)
+  } else {
+    hotAPI.reload("data-v-29f2c0da", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return { activeItem: 'about' };
+  },
+
+  methods: {
+    isActive: function isActive(menuItem) {
+      return this.activeItem === menuItem;
+    },
+    setActive: function setActive(menuItem) {
+      console.log(menuItem);
+      //this.activeItem = menuItem // no need for Vue.set()
+    }
+  }
+});
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "box1" }, [
+        _c("div", { staticClass: "line1" }, [
+          _c("div", { staticClass: "line2 wrapper" }, [
+            _c("section", { staticClass: "col1" }, [
+              _c("h2", [
+                _c("strong", [_vm._v("T")]),
+                _vm._v("rue"),
+                _c("span", [_vm._v("Story 1")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page2_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v("\n\t            Hope Center is one of "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://blog.templatemonster.com/free-website-templates/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("free website tem- plates")]
+              ),
+              _vm._v(
+                " by TemplateMonster.com, opti- mized for 1024X768 res.\n\t            "
+              ),
+              _c("a", { staticClass: "button1", attrs: { href: "#" } }, [
+                _vm._v("Read More")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-29f2c0da", module.exports)
+  }
+}
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(56)
+/* template */
+var __vue_template__ = __webpack_require__(57)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/aboutus.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1164d972", Component.options)
+  } else {
+    hotAPI.reload("data-v-1164d972", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			users: []
+		};
+	}
+});
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "box1" }, [
+        _c("div", { staticClass: "line1" }, [
+          _c("div", { staticClass: "line2 wrapper" }, [
+            _c("section", { staticClass: "col1" }, [
+              _c("h2", [
+                _c("strong", [_vm._v("T")]),
+                _vm._v("rue"),
+                _c("span", [_vm._v("Story 2")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page2_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v("\n\t            Hope Center is one of "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://blog.templatemonster.com/free-website-templates/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("free website tem- plates")]
+              ),
+              _vm._v(
+                " by TemplateMonster.com, opti- mized for 1024X768 res.\n\t            "
+              ),
+              _c("a", { staticClass: "button1", attrs: { href: "#" } }, [
+                _vm._v("Read More")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1164d972", module.exports)
+  }
+}
+
+/***/ }),
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(62)
+/* template */
+var __vue_template__ = __webpack_require__(63)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/contact.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c9f84fb2", Component.options)
+  } else {
+    hotAPI.reload("data-v-c9f84fb2", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			users: []
+		};
+	}
+});
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "box1" }, [
+        _c("div", { staticClass: "line1" }, [
+          _c("div", { staticClass: "line2 wrapper" }, [
+            _c("section", { staticClass: "col1" }, [
+              _c("h2", [
+                _c("strong", [_vm._v("T")]),
+                _vm._v("rue"),
+                _c("span", [_vm._v("Story 4")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page2_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v("\n\t            Hope Center is one of "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://blog.templatemonster.com/free-website-templates/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("free website tem- plates")]
+              ),
+              _vm._v(
+                " by TemplateMonster.com, opti- mized for 1024X768 res.\n\t            "
+              ),
+              _c("a", { staticClass: "button1", attrs: { href: "#" } }, [
+                _vm._v("Read More")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-c9f84fb2", module.exports)
+  }
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(65)
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/gallery.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-18784259", Component.options)
+  } else {
+    hotAPI.reload("data-v-18784259", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			users: []
+		};
+	}
+});
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "box1" }, [
+        _c("div", { staticClass: "line1" }, [
+          _c("div", { staticClass: "line2 wrapper" }, [
+            _c("section", { staticClass: "col1" }, [
+              _c("h2", [
+                _c("strong", [_vm._v("T")]),
+                _vm._v("rue"),
+                _c("span", [_vm._v("Story 5")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page2_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v("\n\t            Hope Center is one of "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://blog.templatemonster.com/free-website-templates/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("free website tem- plates")]
+              ),
+              _vm._v(
+                " by TemplateMonster.com, opti- mized for 1024X768 res.\n\t            "
+              ),
+              _c("a", { staticClass: "button1", attrs: { href: "#" } }, [
+                _vm._v("Read More")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-18784259", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(68)
+/* template */
+var __vue_template__ = __webpack_require__(69)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/help.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c91a136c", Component.options)
+  } else {
+    hotAPI.reload("data-v-c91a136c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			users: []
+		};
+	}
+});
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "wrapper" }, [
+      _c("div", { staticClass: "box1" }, [
+        _c("div", { staticClass: "line1" }, [
+          _c("div", { staticClass: "line2 wrapper" }, [
+            _c("section", { staticClass: "col1" }, [
+              _c("h2", [
+                _c("strong", [_vm._v("T")]),
+                _vm._v("rue"),
+                _c("span", [_vm._v("Story 3")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "pad_bot1" }, [
+                _c("figure", [
+                  _c("img", {
+                    attrs: {
+                      src: "/wp-content/frontend/images/page2_img1.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v("\n\t            Hope Center is one of "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://blog.templatemonster.com/free-website-templates/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("free website tem- plates")]
+              ),
+              _vm._v(
+                " by TemplateMonster.com, opti- mized for 1024X768 res.\n\t            "
+              ),
+              _c("a", { staticClass: "button1", attrs: { href: "#" } }, [
+                _vm._v("Read More")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-c91a136c", module.exports)
+  }
+}
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(71)
+/* template */
+var __vue_template__ = __webpack_require__(72)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/fe/slider.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7aad50ac", Component.options)
+  } else {
+    hotAPI.reload("data-v-7aad50ac", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			users: []
+		};
+	}
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "slider" }, [
+      _c("ul", { staticClass: "items" }, [
+        _c("li", [
+          _c("img", {
+            attrs: { src: "/wp-content/frontend/images/img1.jpg", alt: "" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "banner" }, [
+            _c("div", { staticClass: "wrapper" }, [
+              _c("span", [
+                _vm._v("“Our"),
+                _c("em", [_vm._v("Mission")]),
+                _vm._v("is to"),
+                _c("em", [_vm._v("Help")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "wrapper" }, [
+              _c("strong", [
+                _vm._v("Those Who"),
+                _c("em", [_vm._v("Need")]),
+                _vm._v("It”")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("img", {
+            attrs: { src: "/wp-content/frontend/images/img2.jpg", alt: "" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "banner" }, [
+            _c("div", { staticClass: "wrapper" }, [
+              _c("span", [_vm._v("“MAKE all the CHILDREN")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "wrapper" }, [
+              _c("strong", [_vm._v("of the World HAPPY”")])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("img", {
+            attrs: { src: "/wp-content/frontend/images/img3.jpg", alt: "" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "banner" }, [
+            _c("div", { staticClass: "wrapper" }, [
+              _c("span", [_vm._v("“TOGETHER we can CHANGE")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "wrapper" }, [
+              _c("strong", [_vm._v("Many Young LIVES”")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "pagination" }, [
+        _c("li", { attrs: { id: "banner1" } }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _vm._v("Make"),
+            _c("span", [_vm._v("Donations")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { attrs: { id: "banner2" } }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _vm._v("join"),
+            _c("span", [_vm._v("volunteer")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { attrs: { id: "banner3" } }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _vm._v("Help"),
+            _c("span", [_vm._v("children")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7aad50ac", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

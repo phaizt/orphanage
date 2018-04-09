@@ -22,13 +22,50 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 });*/
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
-
 // define routes for users
 const routes = [
 		{
 		  path: '/',
 		  name: 'homepage',
-		  component: require('./components/fe/index.vue')
+		  components: {
+		  	slider : require('./components/fe/slider.vue'),
+		  	content : require('./components/fe/index.vue'),
+		  }
+		},
+		{
+		  path: '/mission',
+		  name: 'mission',
+		  components: {
+		  	content : require('./components/fe/mission.vue'),
+		  }
+		},
+		{
+		  path: '/aboutus',
+		  name: 'aboutus',
+		  components: {
+		  	content : require('./components/fe/aboutus.vue')
+		  }
+		},
+		{
+		  path: '/help',
+		  name: 'help',
+		  components: {
+		  	content : require('./components/fe/help.vue')
+		  }
+		},
+		{
+		  path: '/contact',
+		  name: 'contact',
+		  components: {
+		  	content : require('./components/fe/contact.vue')
+		  }
+		},
+		{
+		  path: '/gallery',
+		  name: 'gallery',
+		  components: {
+		  	content : require('./components/fe/gallery.vue')
+		  }
 		}
 		];
 
@@ -36,5 +73,5 @@ const router = new VueRouter({ routes });
 const app = new Vue({
   router
 }).$mount('#app');
-
+app.$forceUpdate();
 Vue.config.devtools = true;

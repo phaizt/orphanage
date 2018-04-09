@@ -11,7 +11,7 @@
 <script src="{{ asset('js/app.js') }}" defer></script>
 <script type="text/javascript" src="{{ asset('wp-content/frontend/js/jquery-1.6.js') }}"></script>
 <script type="text/javascript" src="{{ asset('wp-content/frontend/js/cufon-yui.js') }}"></script>
-<script type="text/javascript" src="{{ asset('wp-content/frontend/js/cufon-replace.js"') }}></script> 
+{{-- <script type="text/javascript" src="{{ asset('wp-content/frontend/js/cufon-replace.js') }}"></script>  --}}
 <script type="text/javascript" src="{{ asset('wp-content/frontend/js/Vegur_700.font.js') }}"></script>
 <script type="text/javascript" src="{{ asset('wp-content/frontend/js/Vegur_400.font.js') }}"></script>
 <script type="text/javascript" src="{{ asset('wp-content/frontend/js/Vegur_300.font.js') }}"></script>
@@ -37,25 +37,33 @@
 						</nav>
 						<nav>
 							<ul id="menu">
-								<li id="menu_active">
-									<a href="index.html">@lang('menu_fe.home')</a>
+								<li class="menu_li">
+									<a href="{{ url('#/') }}">@lang('menu_fe.home')</a>
 								</li>
-								<li>
+								<li class="menu_li">
 									<a href="{{ url('#/mission') }}">
 										@lang('menu_fe.mission')
 									</a>
 								</li>
-								<li>
-									<a href="News.html">@lang('menu_fe.about')</a>
+								<li class="menu_li">
+									<a href="{{ url('#/aboutus') }}">
+										@lang('menu_fe.about')
+									</a>
 								</li>
-								<li>
-									<a href="Help.html">@lang('menu_fe.help')</a>
+								<li class="menu_li">
+									<a href="{{ url('#/help') }}">
+										@lang('menu_fe.help')
+									</a>
 								</li>
-								<li>
-									<a href="Contact.html">@lang('menu_fe.contact')</a>
+								<li class="menu_li">
+									<a href="{{ url('#/contact') }}">
+										@lang('menu_fe.contact')
+									</a>
 								</li>
-								<li>
-									<a href="Contact.html">@lang('menu_fe.gallery')</a>
+								<li class="menu_li">
+									<a href="{{ url('#/gallery') }}">
+										@lang('menu_fe.gallery')
+									</a>
 								</li>
 							</ul>
 						</nav>
@@ -99,17 +107,12 @@
 	</div>
 <script type="text/javascript">Cufon.now();</script>
 <script>
-$(window).load(function(){	
-	$('.pagination li').hover(function(){
-		if (!$(this).hasClass('current')) {
-			$(this).find('a').stop().animate({backgroundPosition:'0 0'},600,'easeOutExpo', function(){$(this).parent().css({backgroundPosition:'-20px 0'})});
-		}
-	},function(){
-		if (!$(this).hasClass('current')) {
-			$(this).css({backgroundPosition:'0 0'}).find('a').stop().animate({backgroundPosition:'-250px 0'},600,'easeOutExpo');
-		}
-	})
-})
+$(window).load(function(){		
+	$('.menu_li').click(function() {
+		$('.menu_li').removeAttr('id');
+		$(this).attr('id','menu_active');
+	});
+});
 </script>
 @stack('appjs')
 </body>

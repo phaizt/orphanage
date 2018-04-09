@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 class FeHomepageController extends Controller
 {
+	private $active = ['homepage_menu' => 'menu_active'];
     /**
      * Display a listing of the resource.
      *
@@ -14,6 +15,7 @@ class FeHomepageController extends Controller
      */
     public function index()
     {
-        return view('frontend.homepage');
+    	$active = $this->active;
+        return view('frontend.homepage',compact('active'));
     }
 }

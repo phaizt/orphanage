@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 class FeMissionController extends Controller
 {
+	private $active = ['mission_menu' => 'menu_active'];
     /**
      * Display a listing of the resource.
      *
@@ -14,6 +15,7 @@ class FeMissionController extends Controller
      */
     public function index()
     {
-        return view('frontend.vvv');
+    	$active = $this->active;
+        return view('frontend.mission',compact('active'));
     }
 }
